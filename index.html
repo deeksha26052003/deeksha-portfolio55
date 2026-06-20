@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deeksha Manjunatha Bankapur</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer">Deeksha.</div>
+    <ul class="nav-links">
+      <li><a href="#about" onclick="showPage('about')">About</a></li>
+      <li><a href="#education" onclick="showPage('education')">Education</a></li>
+      <li><a href="#experience" onclick="showPage('experience')">Experience</a></li>
+      <li><a href="#projects" onclick="showPage('projects')">Projects</a></li>
+      <li><a href="#resume" onclick="showPage('resume')">Resume</a></li>
+      <li><a href="#hobbies" onclick="showPage('hobbies')">Hobbies</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="toggle-wrap" onclick="toggleTheme()">
+      <div class="toggle-track">
+        <span class="toggle-icon">🌙</span>
+        <div class="toggle-thumb" id="toggleThumb"></div>
+        <span class="toggle-icon">☀️</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <div class="page active" id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hello">Hello World 👋</p>
+        <h1 class="name">I'm <span id="typed-name"></span><span class="cursor">|</span></h1>
+        <div class="tags">
+          <span class="tag">🤖 AI/ML</span>
+          <span class="tag">💻 SDE</span>
+          <span class="tag">📊 Data Science</span>
+          <span class="tag">☁️ Cloud</span>
+        </div>
+        <p class="tagline">Building intelligent systems, one model at a time 🚀</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary" onclick="showPage('projects')">View Projects</a>
+          <a href="#resume" class="btn-secondary" onclick="showPage('resume')">Resume</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="assets/Female_05.json" background="transparent" speed="1" style="width: 380px; height: 380px;" loop autoplay></lottie-player>
+      </div>
+    </section>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="page" id="about">
+    <section class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-photo">
+          <img src="assets/image.png" alt="Deeksha" class="profile-pic"/>
+        </div>
+        <div class="about-text">
+          <p>Hey! I'm <strong>Deeksha Manjunatha Bankapur</strong>, an MS Computer Science student at <strong>Northeastern University, Boston</strong> (GPA: 3.5), graduating December 2027.</p>
+          <br/>
+          <p>I'm passionate about building intelligent systems at the intersection of AI/ML, data science, and full-stack development. From IEEE-published research in mental health AI to cloud-based security pipelines — I love turning complex problems into clean, scalable solutions.</p>
+          <br/>
+          <p>Currently looking for <strong>Fall 2026 Co-op</strong> opportunities! 🚀</p>
+          <div class="about-links">
+            <a href="mailto:manjunathabankapur.d@northeastern.edu" class="btn-primary">📧 Email Me</a>
+            <a href="https://linkedin.com/in/deeksha-manjunatha-bankapur" target="_blank" class="btn-secondary">💼 LinkedIn</a>
+            <a href="tel:+18579616753" class="btn-secondary">📞 Call Me</a>
+          </div>
+        </div>
+        <div class="about-skills">
+          <div class="orbit-system">
+            <div class="orbit-center">⭐</div>
+            <div class="orbit orbit-1">
+              <div class="planet p1">Python</div>
+              <div class="planet p2">SQL</div>
+              <div class="planet p3">Java</div>
+            </div>
+            <div class="orbit orbit-2">
+              <div class="planet p4">PyTorch</div>
+              <div class="planet p5">LangChain</div>
+              <div class="planet p6">XGBoost</div>
+            </div>
+            <div class="orbit orbit-3">
+              <div class="planet p7">React</div>
+              <div class="planet p8">AWS</div>
+              <div class="planet p9">Docker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="page" id="education">
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-container">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>Northeastern University</h3>
+            <p class="edu-degree">M.S. Computer Science</p>
+            <p class="edu-meta">Boston, MA &nbsp;|&nbsp; Aug 2025 – Dec 2027 &nbsp;|&nbsp; GPA: 3.5/4.0</p>
+            <p class="edu-courses">Algorithms · Database Management · AI & Machine Learning · Deep Learning · NLP · Statistics</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-info">
+            <h3>Dayananda Sagar College of Engineering</h3>
+            <p class="edu-degree">B.E. Computer Science</p>
+            <p class="edu-meta">Bangalore, India &nbsp;|&nbsp; Aug 2021 – May 2025 &nbsp;|&nbsp; GPA: 3.7/4.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="page" id="experience">
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="exp-container">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <h3>Full-Stack Developer Intern</h3>
+              <p class="exp-company">Archelos Intelsense Technologies Pvt. Ltd. · Bangalore, India</p>
+            </div>
+            <span class="exp-date">Feb 2025 – May 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built automated data pipelines using AWS (Lambda, S3) and REST APIs to ensure reliable, reproducible data workflows; collaborated with cross-functional teams and contributed to well-documented code repositories.</li>
+            <li>Developed and deployed REST API endpoints and full-stack features using JavaScript and Python; integrated LLM-based tools to automate internal workflows, reducing manual processing time and improving team operational efficiency.</li>
+            <li>Worked in an Agile environment using Jira and Confluence for sprint planning, task tracking, and documentation; participated in code reviews to maintain code quality and consistency across the codebase.</li>
+            <li>Collaborated with product and design teams to ship user-facing features end-to-end — from backend API design to frontend integration — ensuring seamless UX across web platforms.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>AWS Lambda</span><span>S3</span><span>Python</span><span>JavaScript</span><span>REST APIs</span><span>LLMs</span><span>Agile</span><span>Jira</span>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <h3>Data Science Intern</h3>
+              <p class="exp-company">Mevi Technologies LLP · Bangalore, India</p>
+            </div>
+            <span class="exp-date">Oct 2024 – Jan 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Designed end-to-end AI workflows using Python and PyTorch to automate analysis of structured and unstructured clinical datasets sourced from hospital partners; applied feature engineering and statistical modeling to generate actionable insights.</li>
+            <li>Tracked experiments using MLOps practices and CI/CD pipelines, improving pipeline efficiency by 25%; built anomaly detection workflows and maintained reproducible experiment logs using MLflow.</li>
+            <li>Built and maintained interactive dashboards in Tableau and Power BI surfacing key operational and clinical metrics for both technical and non-technical stakeholders.</li>
+            <li>Performed data cleaning, EDA, and preprocessing on large healthcare datasets; documented findings and presented weekly insight reports to the product and engineering leads.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>PyTorch</span><span>MLflow</span><span>Tableau</span><span>Power BI</span><span>CI/CD</span><span>Healthcare AI</span><span>Anomaly Detection</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="page" id="projects">
+    <section class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">&#8249;</button>
+        <div class="carousel-track">
+
+          <div class="carousel-card active">
+            <div class="proj-card-big">
+              <div class="proj-num">01 / 04</div>
+              <h3>MediLens 🩺</h3>
+              <p class="proj-sub">Medical Imaging & Clinical AI</p>
+              <p class="proj-desc">Building distributed clinical data analytics pipeline leveraging Databricks and NVIDIA MONAI to process and analyze medical imaging datasets. Developing interactive visualization tools to translate complex clinical data into actionable diagnostic insights.</p>
+              <div class="proj-tags">
+                <span>Python</span><span>NVIDIA MONAI</span><span>Databricks</span><span>DICOM</span><span>Computer Vision</span>
+              </div>
+              <div class="proj-footer">
+                <span class="proj-date">May 2026 – Present</span>
+                <a href="https://github.com/deeksha26052003/medilens" target="_blank" class="git-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-card">
+            <div class="proj-card-big">
+              <div class="proj-num">02 / 04</div>
+              <h3>AlgoLearn 🧠</h3>
+              <p class="proj-sub">Algorithm Visualization Platform</p>
+              <p class="proj-desc">Co-built a full-stack platform with production-ready REST APIs and Node.js backend services. Features real-time algorithm visualization using Canvas API and WebSocket for collaborative learning experiences.</p>
+              <div class="proj-tags">
+                <span>React</span><span>Node.js</span><span>TypeScript</span><span>MongoDB</span><span>Canvas API</span><span>WebSocket</span>
+              </div>
+              <div class="proj-footer">
+                <span class="proj-date">Jan 2025 – Present</span>
+                <a href="https://github.com/shriyays/AlgoLearn" target="_blank" class="git-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-card">
+            <div class="proj-card-big">
+              <div class="proj-num">03 / 04</div>
+              <h3>Heal I/O 💊</h3>
+              <p class="proj-sub">Full-Stack Health Tracker</p>
+              <p class="proj-desc">Built self-service workflow automation tools end-to-end — designed data pipelines with full CRUD support, built API-driven dashboards enabling non-technical users to track health metrics and generate doctor-ready PDF reports.</p>
+              <div class="proj-tags">
+                <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JavaScript</span>
+              </div>
+              <div class="proj-footer">
+                <span class="proj-date">March 2026 – Present</span>
+                <a href="https://github.com/deeksha26052003/Heal-IO" target="_blank" class="git-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-card">
+            <div class="proj-card-big">
+              <div class="proj-num">04 / 04</div>
+              <h3>Mental Health Monitoring 🧬</h3>
+              <p class="proj-sub">IEEE Published · Healthcare AI</p>
+              <p class="proj-desc">Designed and deployed production-grade agentic AI pipelines for healthcare informatics. Built and evaluated LLM-based classification models using RAG and multi-agent orchestration, achieving 87% accuracy. IEEE Published 2024.</p>
+              <div class="proj-tags">
+                <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>XGBoost</span><span>Flask</span><span>AWS</span><span>RAG</span>
+              </div>
+              <div class="proj-footer">
+                <span class="proj-date">Aug 2024 – Present</span>
+                <a href="https://github.com/deeksha26052003/Mental_Health_Monitoring" target="_blank" class="git-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-btn next" onclick="changeSlide(1)">&#8250;</button>
+      </div>
+      <div class="carousel-dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
+    </section>
+  </div>
+
+  <!-- RESUME -->
+  <div class="page" id="resume">
+    <section class="section">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-container">
+        <div class="resume-card">
+          <div class="resume-icon">💻</div>
+          <div class="resume-info">
+            <h3>Software Engineer Resume</h3>
+            <p>Full-stack development, cloud, backend engineering roles</p>
+          </div>
+          <a href="assets/SWE-NEW.pdf" download class="resume-btn">⬇️ Download</a>
+        </div>
+        <div class="resume-card">
+          <div class="resume-icon">🤖</div>
+          <div class="resume-info">
+            <h3>AI / ML / Data Science Resume</h3>
+            <p>Machine learning, data science, AI research roles</p>
+          </div>
+          <a href="assets/AI-ML-DS.pdf" download class="resume-btn">⬇️ Download</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- HOBBIES -->
+  <div class="page" id="hobbies">
+    <section class="section">
+      <h2 class="section-title">Beyond the Code ✨</h2>
+      <p class="hobbies-intro">When I'm not pushing commits or debugging at 2am, here's what keeps me sane 😄</p>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon">🏸</div>
+          <h3>Badminton</h3>
+          <p>My go-to stress buster! There's something satisfying about smashing a shuttlecock after a long debugging session. Competitive but make it fun 😤</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🎬</div>
+          <h3>Movie Marathons</h3>
+          <p>Certified binge-watcher. Sci-fi, thrillers, anything with a good plot twist — I'm in. Also constantly recommending movies nobody asked for 🎥</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">📚</div>
+          <h3>Reading</h3>
+          <p>From tech blogs to fiction — if it's interesting, I'll read it. Currently exploring the intersection of AI ethics and human psychology 🧠</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🏋️‍♀️</div>
+          <h3>Gym & Fitness</h3>
+          <p>Structured workout splits are my thing. Treat it like a codebase — consistent, progressive, and always room to optimize 💪</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">✈️</div>
+          <h3>Travelling</h3>
+          <p>New cities, new food, new perspectives. Every trip is a new dataset to explore — and I always come back with better stories 🌍</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🎵</div>
+          <h3>Music</h3>
+          <p>My coding playlist is curated with the same energy as my ML pipelines. Lo-fi for debugging, hype tracks for deploying 🎧</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="particles-js" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none;"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
